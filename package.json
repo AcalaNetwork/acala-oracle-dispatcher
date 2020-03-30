@@ -1,0 +1,12 @@
+{
+  "name": "acala-oracle-dispatcher",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/AcalaNetwork/acala-oracle-dispatcher.git",
+  "author": "Acala Developers <hello@acala.network>",
+  "license": "Apache-2.0",
+  "scripts": {
+    "postinstall": "cd servers/packages/acala-oracle-dispatcher && yarn install",
+    "start": "cd servers/packages/acala-oracle-dispatcher && yarn start"
+  }
+}
