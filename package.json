@@ -8,5 +8,8 @@
   "scripts": {
     "postinstall": "cd servers/packages/acala-oracle-dispatcher && yarn install",
     "start": "cd servers/packages/acala-oracle-dispatcher && yarn start"
+  },
+  "dependencies": {
+    "@slack/webhook": "^5.0.3"
   }
 }
