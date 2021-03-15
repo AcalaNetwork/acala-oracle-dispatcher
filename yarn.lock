@@ -2,33 +2,3 @@
 # yarn lockfile v1
 
 
-"@slack/types@^1.2.1":
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/@slack/types/-/types-1.10.0.tgz#cbf7d83e1027f4cbfd13d6b429f120c7fb09127a"
-  integrity sha512-tA7GG7Tj479vojfV3AoxbckalA48aK6giGjNtgH6ihpLwTyHE3fIgRrvt8TWfLwW8X8dyu7vgmAsGLRG7hWWOg==
-
-"@slack/webhook@^5.0.3":
-  version "5.0.4"
-  resolved "https://registry.yarnpkg.com/@slack/webhook/-/webhook-5.0.4.tgz#5d3e947387c1d0ccb176a153cec68c594edb7060"
-  integrity sha512-IC1dpVSc2F/pmwCxOb0QzH2xnGKmyT7MofPGhNkeaoiMrLMU+Oc7xV/AxGnz40mURtCtaDchZSM3tDo9c9x6BA==
-  dependencies:
-    "@slack/types" "^1.2.1"
-    "@types/node" ">=8.9.0"
-    axios "^0.21.1"
-
-"@types/node@>=8.9.0":
-  version "14.14.34"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.34.tgz#07935194fc049069a1c56c0c274265abeddf88da"
-  integrity sha512-dBPaxocOK6UVyvhbnpFIj2W+S+1cBTkHQbFQfeeJhoKFbzYcVUGHvddeWPSucKATb3F0+pgDq0i6ghEaZjsugA==
-
-axios@^0.21.1:
-  version "0.21.1"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
-  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
-  dependencies:
-    follow-redirects "^1.10.0"
-
-follow-redirects@^1.10.0:
-  version "1.13.3"
-  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.13.3.tgz#e5598ad50174c1bc4e872301e82ac2cd97f90267"
-  integrity sha512-DUgl6+HDzB0iEptNQEXLx/KhTmDb8tZUHSeLqpnjpknR70H0nC2t9N73BK6fN4hOvJ84pKlIQVQ4k5FFlBedKA==
