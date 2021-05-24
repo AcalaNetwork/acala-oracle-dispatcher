@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN yarn install --production --frozen-lockfile
+RUN yarn install --frozen-lockfile
 
 EXPOSE 3000
 
