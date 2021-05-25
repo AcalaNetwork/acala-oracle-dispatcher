@@ -8,10 +8,10 @@
             "name": "Server",
             "type": "node",
             "request": "launch",
-            "args": ["${workspaceRoot}/servers/packages/acala-oracle-dispatcher/index.ts"],
+            "args": ["${workspaceRoot}/src/index.ts"],
             "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
             "sourceMaps": true,
-            "cwd": "${workspaceRoot}/servers/packages/acala-oracle-dispatcher",
+            "cwd": "${workspaceRoot}",
             "protocol": "inspector"
           },
     ]
