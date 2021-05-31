@@ -1,5 +1,3 @@
-/* eslint-disable */
-
 import { options } from '@acala-network/api';
 import { builder, onInterval, createEvent, onEvent } from '@open-web3/dispatcher';
 import { ApiManager } from '@open-web3/api';
@@ -10,6 +8,7 @@ import { cryptoWaitReady } from '@polkadot/util-crypto';
 import createServer from './api';
 import PriceFetcher from './PriceFetcher';
 import defaultConfig from './config';
+import loggerOutput from './logger';
 
 import tradeDex from './dex';
 
@@ -29,7 +28,8 @@ const run = async (overrideConfig: Partial<ReturnType<typeof readEnvConfig>> = {
     production: config.env === 'production',
     filter: config.logFilter,
     level: config.logLevel,
-    heartbeatGroup: heartbeats
+    heartbeatGroup: heartbeats,
+    output: config.env === 'production' ? loggerOutput : undefined
   });
 
   await cryptoWaitReady();
