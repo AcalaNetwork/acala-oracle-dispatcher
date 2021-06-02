@@ -1,10 +1,11 @@
-import { inspect } from "util";
-import { LoggerOutput } from "@open-web3/util/logger";
+import { inspect } from 'util';
+import { LoggerOutput, consoleOutput } from '@open-web3/util/logger';
 
 const jsonOutput: LoggerOutput = (payload) => {
-  console.log(
-    inspect(payload, { depth: 6, colors: false, breakLength: Infinity })
-  );
+  consoleOutput({
+    ...payload,
+    args: [inspect(payload.args, { depth: 5, colors: false, breakLength: Infinity, compact: Infinity })]
+  });
 };
 
 export default jsonOutput;
